@@ -1,0 +1,98 @@
+*{box-sizing: border-box;
+margin: 0;
+padding: 0;}
+
+.container
+{
+    height: 100px;
+    width: 100%;
+    background: lightcoral;
+    line-height: 100px;
+    padding-left: 150px;
+}
+
+.container .mainul
+{
+  list-style: none;
+}
+
+.container .mainli
+{
+    display: inline;
+    margin-right:20px;
+    position: relative;
+    padding: 30px;
+    /* border: 1px solid; */
+    
+}
+
+.container a
+{
+    text-decoration: none;
+    font-size: 34px;
+    color: black;
+}
+
+.container .submenu
+{
+    height: 400px;
+    width: 700px;
+    background-color: white;
+    position: absolute;
+    top:100%;
+    left:0;
+    display: flex;
+    visibility: hidden;
+}
+
+.container .mainli:hover .submenu 
+{
+   visibility: visible;
+}
+
+.container .submenu .left
+{
+    height: 400px;
+    width: 200px;
+    background: grey;
+    box-shadow: 1px 1px 20px rgb(100, 25, 10);
+}
+
+.container .submenu .right
+{
+    height: 400px;
+    width: 500px;
+    background: yellow;
+    position: absolute;
+    top: 0;
+    right:0;
+    visibility:hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 20px;
+    font-size: 34px;
+    
+}
+
+.firstli:hover .right
+{
+    visibility: visible;
+}
+
+.container .submenu .left .firstul
+{
+    list-style: none;
+    line-height: 50px;
+    padding: 20px 10px;
+}
+
+.submenu .right .x
+{
+    height: 300px;
+    width: 200px;
+    background:blue;
+    box-shadow: 0px 0px 20px rgb(125, 25, 50);
+}
+
+
+
